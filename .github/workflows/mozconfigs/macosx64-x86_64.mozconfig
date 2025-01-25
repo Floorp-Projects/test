@@ -1,5 +1,5 @@
-ac_add_options --with-app-name=floorp
-ac_add_options --with-app-basename=Floorp
+ac_add_options --with-app-name=firefox
+ac_add_options --with-app-basename=Firefox
 
 ac_add_options --target=x86_64-apple-darwin
 
