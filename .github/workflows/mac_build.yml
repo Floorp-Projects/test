@@ -151,10 +151,6 @@ jobs:
         echo "mk_add_options 'export SCCACHE_GHA_ENABLED=on'" >> mozconfig
         # SCCACHE END
 
-        # Chrome Format
-        echo "ac_add_options --enable-chrome-format=flat" >> mozconfig
-        # Enable Flat Package
-
         # Debug
         if [[ $GHA_debug == 'true' ]]; then
           echo "ac_add_options --enable-debug" >> mozconfig
