@@ -13,6 +13,8 @@ V1_CUTOFF = 20150801000000  # YYYYmmddHHMMSS
 
 
 def android_version_code_v0(buildid, cpu_arch=None, min_sdk=0, max_sdk=0):
+    if min_sdk < 0:
+        raise ValueError("min_sdk must be non-negative")
     base = int(str(buildid)[:10])
     # None is interpreted as arm.
     if not cpu_arch or cpu_arch == "armeabi-v7a":
